@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo docker run --name=mvn --rm -v $(pwd):/usr/src/mymaven -w /usr/src/mymaven -v maven-repo:/root/.m2 --net=host maven:3.6-openjdk-8-slim mvn $@

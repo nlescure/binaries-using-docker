@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo docker run --name=dotnet --rm  -v $(pwd):/app -v ~/.dotnet/tools:/usr/local/sbin -w /app mcr.microsoft.com/dotnet/sdk dotnet $@
